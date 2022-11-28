@@ -1,0 +1,98 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}     
+
+.container {
+    border: 2.5px solid black;
+    border-radius: 10px;
+    margin-top: 1.25rem;
+}
+
+#logo-img {
+    margin-right: 1.5rem;
+}
+
+.container__banner {
+    padding: 0px;
+    position: relative;
+    /* max-height: 25vw; */
+    height: 40vh;
+    min-height: 40vh;
+    overflow: hidden;
+}
+
+@media (max-width: 300px) {
+    .container__banner {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner__img {
+    height: 100%;
+    width: 100%;
+    object-position: bottom right;
+    object-fit: cover;
+    /* background-size: cover; */
+    border-radius: 10px;
+}
+
+
+.profile__img {
+    height: 20vw;
+    width: fit-content;
+    max-height: 50%;
+    min-height: 82px;
+    padding: 3px;
+    margin-left: 1.25rem;;
+    border: 3px solid;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 15%;
+}
+
+@media (max-width: 300px) {
+    .profile__img {
+        margin-left: 0;
+    }
+}
+
+.profile__img img {
+    border-radius: 50%;
+    /* height: 100%; */
+    max-width: 100%;
+    min-height: 70px;
+}
+
+.profile__name {
+    position: absolute;
+    bottom: 0;
+}
+
+.profile__name p {
+    /* min-height: 100%; */
+    margin-bottom: 10px;
+    margin-left: 15px;
+    line-height: 1;
+}
+
+@media (max-width: 300px) {
+    .profile__name p {
+        margin-left: 0;
+    }
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: auto;
+    margin-top: 20px;
+}
+
+/*=========================================*/
