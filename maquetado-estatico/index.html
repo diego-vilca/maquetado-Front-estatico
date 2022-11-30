@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- custom CSS-->
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <header>
@@ -88,8 +89,8 @@
               <div class="progreso" style="--clr:#04fc43;--num:75;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>75<span>%</span></h2>
@@ -102,8 +103,8 @@
               <div class="progreso" style="--clr:#06ccff;--num:95;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>95<span>%</span></h2>
@@ -116,8 +117,8 @@
               <div class="progreso" style="--clr:#ff00be;--num:50;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>50<span>%</span></h2>
@@ -130,8 +131,8 @@
               <div class="progreso" style="--clr:#fee800;--num:60;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>60<span>%</span></h2>
@@ -144,8 +145,8 @@
               <div class="progreso" style="--clr:#04fc43;--num:90;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>90<span>%</span></h2>
@@ -158,8 +159,8 @@
               <div class="progreso" style="--clr:#06ccff;--num:50;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>50<span>%</span></h2>
@@ -172,8 +173,8 @@
               <div class="progreso" style="--clr:#ff00be;--num:60;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>60<span>%</span></h2>
@@ -186,8 +187,8 @@
               <div class="progreso" style="--clr:#fee800;--num:60;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>60<span>%</span></h2>
@@ -200,8 +201,8 @@
               <div class="progreso" style="--clr:#04fc43;--num:80;">
                 <div class="puntito"></div>
                 <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
+                  <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
                   <h2>80<span>%</span></h2>
@@ -228,5 +229,27 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(function () {
+        var element1 = $(".circulo");
+        var element2 = $(".puntito");
+        var element3 = $(".valor-porcentual");
+
+        $(window).scroll(function () {
+          if($(window).scrollTop() > 0) {
+            element1.addClass("animame");
+            element2.addClass("animame");
+            element3.addClass("animame");
+          }else {
+            element1.removeClass("animame");
+            element2.removeClass("animame");
+            element3.removeClass("animame");
+          }
+          
+        });
+
+        
+      });
+    </script>
 </body>
 </html>

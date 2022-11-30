@@ -155,9 +155,16 @@ footer{
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440 * var(--num))/100);
     opacity: 0;
+    /* animation: fadeIn 1s linear forwards; */
+    
+}
+
+.circulo.animame {
+    
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
 }
+
 @keyframes fadeIn {
     0%
     {
@@ -171,12 +178,16 @@ footer{
 
 .puntito {
     position: absolute;
-    /* background: #f00; */
     inset: 5px;
     z-index: 10;
-    /* transform: rotate(calc(3.6deg * var(--num))); */
+    /* animation: animarPunto 2s linear forwards; */
+}
+
+.puntito.animame {
     animation: animarPunto 2s linear forwards;
 }
+
+
 @keyframes animarPunto {
     0%
     {
@@ -210,6 +221,10 @@ footer{
     align-items: center;
     flex-direction: column;
     opacity: 0;
+    /* animation: fadeIn 1s linear forwards; */
+}
+
+.valor-porcentual.animame {
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
 }
