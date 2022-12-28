@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a href="#">
-                <img id="logo-img" src="./media/APLogo-20-20.png" alt="logo" width="90px">
+                <img id="logo-img" src="./media/logos/APLogo.png" alt="logo" width="90px">
               </a>
               <a class="navbar-brand" href="#">
                 Portfolio Web
@@ -29,18 +29,23 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Experiencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link active" aria-current="page" href="#">Educación</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link active" aria-current="page" href="#">Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Proyectos</a>
                   </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn btn-outline-success" type="submit">Login</button>
                 </form>
               </div>
             </div>
@@ -48,14 +53,24 @@
 
         <!--banner-->
         <div class="container container__banner" >
-          <img class="banner__img" src="./media/IT-Banner.png" alt="banner">
+          <div class="layer__banner"></div>
+          <!-- redes -->
+          <div class="social-bar">
+            <a href="" class="icon icon-facebook" target="_blank"></a>
+            <a href="" class="icon icon-whatsapp" target="_blank"></a>
+            <a href="" class="icon icon-twitter" target="_blank"></a>
+            <a href="" class="icon icon-instagram" target="_blank"></a>
+          </div>
+          <!-- imagen banner -->
+          <img class="banner__img" src="./media/banner.png" alt="banner">
+
           
           <div class="container-profile">
             <div class="container profile__img">
-              <img src="./media/profile2.jpg" alt="img-profile">            
+              <img src="./media/profile.jpg" alt="img-profile">            
             </div>
             <div class="profile__name">
-              <p>Diego Victor Vilca</p>
+              <h1>Diego Victor Vilca</h1>
             </div>
           </div>
 
@@ -66,22 +81,219 @@
     <main>
                     
       <section id="acerca_de" class="container">
-        <h5>Acerca de...</h5>
+        <h2>Acerca de...</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestiae omnis perspiciatis, accusamus, sed corrupti expedita sunt possimus libero sequi impedit dolorem minus unde beatae veniam culpa praesentium quisquam voluptatibus!</p>
       </section>
       
       <section id="experiencia" class="container">
-        <h5>Experiencia</h5>
+        <h2>Experiencia</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores nam architecto repellendus commodi, ducimus minima facere velit debitis vel quo rerum. Aperiam numquam labore eaque, incidunt soluta possimus vitae.</p>
       </section>
 
       <section id="educacion" class="container">
-        <h5>Educación</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione exercitationem temporibus architecto quis in minima assumenda aspernatur autem, sunt voluptatum velit dolorum ea ex veniam veritatis provident, numquam nobis!</p>
+        <div class="educacion-titulo">
+          <h2>Educación</h2>       
+        </div>
+        <div class="educacion-lista">
+          <ul class="items-list">
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://mim.edu.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/mim-logo.jpg" alt="mim-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://mim.edu.ar/" target="_blank" rel="noopener">
+                    <h3>Escuela Mariano Moreno</h3>
+                    <p>Bachiller en Ciencias Sociales</p>
+                    <p><time>2005</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://polotic.misiones.gob.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/polo-logo.png" alt="polotic-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://blockchainmisiones.aerobotsmisiones.com/certcheck/index.php?numero=1454" target="_blank" rel="noopener">
+                    <h3>Polotic</h3>
+                    <p>Curso de Desarrollo Web FullStack con Python y JavaScript</p>
+                    <p><time>2021</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://polotic.misiones.gob.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/polo-logo.png" alt="polotic-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://blockchainmisiones.aerobotsmisiones.com/certcheck/index.php?numero=289" target="_blank" rel="noopener">
+                    <h3>Polotic</h3>
+                    <p>Curso de Programación Web PHP</p>
+                    <p><time>2021</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://polotic.misiones.gob.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/polo-logo.png" alt="polotic-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://blockchainmisiones.aerobotsmisiones.com/certcheck/index.php?numero=1408" target="_blank" rel="noopener">
+                    <h3>Polotic</h3>
+                    <p>Curso de Inglés para Desarrollo de Software</p>
+                    <p><time>2021</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://siliconmisiones.gob.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/silicon-logo.png" alt="silicon-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://blockchainmisiones.aerobotsmisiones.com/certcheck/index.php?numero=3658" target="_blank" rel="noopener">
+                    <h3>Silicon Misiones</h3>
+                    <p>Curso de Desarrollo Web Fullstack con Java</p>
+                    <p><time>2022</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://www.unsam.edu.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/unsam-logo.png" alt="unsam-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://drive.google.com/file/d/1YpBpye02sLPe7xGBps7OIqa37jel1OnR/view?usp=share_link" target="_blank" rel="noopener">
+                    <h3>Universidad Nacional San Martin</h3>
+                    <p>Curso de Programación en Python</p>
+                    <p><time>2021</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://www.itba.edu.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/itba-logo.png" alt="itba-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://drive.google.com/file/d/1NPXe-HAF_hy580YFcP8ymBPyFROaMbdT/view?usp=share_link" target="_blank" rel="noopener">
+                    <h3>Instituto Tecnológico de Buenos Aires</h3>
+                    <p>Curso de analisis de datos en Python</p>
+                    <p><time>2021</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://todocodeacademy.com/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/todocode-logo.png" alt="todocode-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://drive.google.com/file/d/1tT3gFTCu1Ji7kVmg-YWa2LxjYkwXp1U2/view?usp=share_link" target="_blank" rel="noopener">
+                    <h3>Todo Code</h3>
+                    <p>Curso de Desarrollo de APIs en Java
+                      con SpringBoot<p>
+
+                      <p><time>2022</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2 pe-0">
+                  <a href="https://www.fra.utn.edu.ar/" target="_blank" rel="noopener">
+                    <img class="educacion-logo" src="media/logos/utn-logo.png" alt="utn-logo">
+                  </a>
+                </div>
+                <div class="educacion-info col-lg-10 col-md-10 col-sm-8 col-8">
+                  <a href="https://www.fra.utn.edu.ar/" target="_blank" rel="noopener">
+                    <h3>UTN</h3>
+                    <p>Tecnicatura en Programación</p>
+                    <p><time>Cursando</time></p>
+                  </a>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                  <p>
+                    <!-- icon -->
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
       </section>
       <!--skills-->
       <section id="skills" class="container">
-        <h5>Skills</h5>
+        <h2>Habilidades</h2>
         <div class="skills-container">
           <div class="progreso-container">
 
@@ -93,21 +305,21 @@
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>75<span>%</span></h2>
+                  <h3>75<span>%</span></h3>
                   <p>html</p>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="progreso" style="--clr:#06ccff;--num:95;">
+              <div class="progreso" style="--clr:#6A94EC;--num:95;">
                 <div class="puntito"></div>
                 <svg>
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>95<span>%</span></h2>
+                  <h3>95<span>%</span></h3>
                   <p>css</p>
                 </div>
               </div>
@@ -121,7 +333,7 @@
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>50<span>%</span></h2>
+                  <h3>50<span>%</span></h3>
                   <p>javascript</p>
                 </div>
               </div>
@@ -135,7 +347,7 @@
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>60<span>%</span></h2>
+                  <h3>60<span>%</span></h3>
                   <p>typescript</p>
                 </div>
               </div>
@@ -149,21 +361,21 @@
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>90<span>%</span></h2>
+                  <h3>90<span>%</span></h3>
                   <p>java</p>
                 </div>
               </div>
             </div>
 
             <div class="card">
-              <div class="progreso" style="--clr:#06ccff;--num:50;">
+              <div class="progreso" style="--clr:#6A94EC;--num:50;">
                 <div class="puntito"></div>
                 <svg>
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>50<span>%</span></h2>
+                  <h3>50<span>%</span></h3>
                   <p>angular</p>
                 </div>
               </div>
@@ -177,7 +389,7 @@
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>60<span>%</span></h2>
+                  <h3>60<span>%</span></h3>
                   <p>springboot</p>
                 </div>
               </div>
@@ -191,7 +403,7 @@
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>60<span>%</span></h2>
+                  <h3>60<span>%</span></h3>
                   <p>mysql</p>
                 </div>
               </div>
@@ -205,7 +417,7 @@
                   <circle class="circulo" cx="70" cy="70" r="70"></circle>
                 </svg>
                 <div class="valor-porcentual">
-                  <h2>80<span>%</span></h2>
+                  <h3>80<span>%</span></h3>
                   <p>ingles</p>
                 </div>
               </div>
@@ -216,15 +428,46 @@
       </section>
       
       <section id="proyectos" class="container">
-        <h5>Proyectos</h5>
+        <h2>Proyectos</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas ad fugit minima iste quos nisi. Neque, modi nostrum officia nihil, doloribus mollitia, iusto alias iste sint repellat laboriosam atque?</p>
       </section>  
-        
+      
                   
     </main>
     <footer>
-        <div class="container">
-            <p>&copy; 2022 Diego Vilca</p>
+        <div class="container container-footer">
+          <ul class="redes-footer">
+            <li>
+              <a href="" class="footer-icon" target="_blank"><span class="icon-facebook"></span></a>
+            </li>
+            <li>
+              <a href="" class="footer-icon" target="_blank"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+              <a href="" class="footer-icon" target="_blank"><span class="icon-whatsapp"></span></a>
+            </li>
+            <li>
+              <a href="" class="footer-icon" target="_blank"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+          <ul class="menu">
+            <li>
+              <a href="#">Acerca de</a>
+            </li>                  
+            <li>
+              <a href="#">Experiencia</a>
+            </li>
+            <li>
+              <a href="#">Educación</a>
+            </li>
+            <li>
+              <a href="#">Habilidades</a>
+            </li>
+            <li>
+              <a href="#">Proyectos</a>
+            </li>
+          </ul>
+          <p>&copy; 2022 Diego Victor Vilca | All Rights Reserved</p>
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->

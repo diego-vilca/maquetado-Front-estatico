@@ -1,11 +1,31 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*=====================================*/
+
 *, *::before, *::after{
     box-sizing: border-box;
 }     
 
+body {
+    /* background-color: #e0f4fd; */
+    /* background-color: whitesmoke; */
+    background-color: #eaf5fa;
+    font-family: 'Poppins', sans-serif;
+    font-size: .813rem;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 600;
+}
+
 .container {
-    border: 2.5px solid black;
+    /* border: 2.5px solid #212529; */
+    background-color: whitesmoke;
+    border: 2.5px solid rgb(176, 168, 185, .7);
     border-radius: 10px;
     margin-top: 1.25rem;
+    color: #4B4453;
 }
 
 #logo-img {
@@ -20,6 +40,15 @@
     overflow: hidden;
 }
 
+.layer__banner {    
+    position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+    background-image: linear-gradient(to right,
+    rgba(33, 37, 41, 1) 10%,
+    rgba(33, 37, 41, .7) 40%,
+    rgba(33, 37, 41, .4) 70%,
+    rgba(33, 37, 41, 0) 100%);
+}
+
 @media (max-width: 300px) {
     .container__banner {
         display: flex;
@@ -28,12 +57,19 @@
 }
 
 .container-profile {
-    max-height: 70%;
+    max-height: 75%;
     position: absolute;
     bottom: 0;
     justify-content: center;
     margin-left: 16px;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px){
+    .container-profile .profile__name h1{
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 300px) {
@@ -41,8 +77,11 @@
         margin-left: 0;
         text-align: center;
     }
-}
 
+    .container-profile .profile__name h1{
+        font-size: 1.125rem;
+    }
+}
 
 img {
     max-width: 100%;
@@ -63,9 +102,10 @@ img {
     width: fit-content;
     max-height: 50%;
     min-height: 82px;
-    padding: 3px;
-    border: 3px solid;
+    padding: 6px;
+    border: 1px solid #7B7484;
     border-radius: 50%;
+    background-color: #eaf5fa;
 }
 
 @media (max-width: 300px) {
@@ -78,20 +118,46 @@ img {
     border-radius: 50%;
     max-width: 100%;
     min-height: 70px;
+    border-color: #212529;
+    /* border-color: #B0A8B9; */
 }
 
-.profile__name p {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    line-height: 1;
-}
-
-
-footer{
-    background-color: black;
+.profile__name h1{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 1.2;
     color: white;
-    padding: auto;
-    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .2px;     */
+}
+
+.container h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 10px;
+    /* color: #4B4453; */
+    color: #3d3d3d;
+}
+
+h3 {
+    font-size: .938rem;
+    color: #3d3d3d;
+}
+
+/*navbar*/
+
+.nav-link {
+    opacity: 0.75;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.navbar-nav {
+    padding-right: 8px;
 }
 
 /*=========================================*/
@@ -103,7 +169,10 @@ footer{
     justify-content:center;
     align-items: center;
     min-height: 30vh;
-    background: #222;
+    /* background: #222; */
+    background-color: whitesmoke;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .progreso-container {
@@ -122,10 +191,12 @@ footer{
     position: relative;
     width: 200px;
     height: 200px;
-    background: #2a2a2a;
+    /* background: #2a2a2a; */
+    background: #B0A8B9;
     display:flex;
     justify-content:center;
     align-items: center;
+    border-radius: 0.5rem;
 }
 
 .progreso-container .card .progreso {
@@ -146,7 +217,9 @@ footer{
     height: 100%;
     fill: transparent;
     stroke-width: 2;
-    stroke: #191919;
+    /* stroke: #212529; */
+    /* stroke: #4B4453; */
+    stroke: #7B7484;
     transform: translate(5px,5px);
 }
 
@@ -208,6 +281,7 @@ footer{
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    /* border-color: #4B4453; */
     background: var(--clr);
     box-shadow: 0 0 10px var(--clr),
     0 0 30px var(clr);
@@ -229,28 +303,266 @@ footer{
     animation-delay: 2.5s;
 }
 
-.valor-porcentual h2 {
+.valor-porcentual h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    /* color: #fff; */
+    /* color: #212529; */
+    color: #4B4453;
     margin: 0;
     font-weight: 700;
     font-size: 2em;
 }
 
-.valor-porcentual h2 span {
-    font-weight: 100;
-    color: #fff;
+.valor-porcentual h3 span {
+    font-weight: 150;
+    /* color: #fff; */
+    /* color: #212529; */
+    color: #4B4453;
     font-size: 0.5em;
 }
 
 .valor-porcentual p {
-    font-weight: 100;
-    font-size: 0.7em;
+    font-weight: 200;
+    font-size: 0.8em;
     line-height: 2px;
     margin-top: 5px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
+    /* color: rgba(255,255,255,0.75); */
+    color: rgba(33,37,41,1);
+    /* color: rgba(75, 68, 83, 1); */
+    /* color: rgba(0, 88, 147, 1); */
 }
+
+
+
+/*=========================================*/
+/*ICONOS REDES*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('media/fonts/icomoon.eot?cuglms');
+    src:  url('media/fonts/icomoon.eot?cuglms#iefix') format('embedded-opentype'),
+      url('media/fonts/icomoon.ttf?cuglms') format('truetype'),
+      url('media/fonts/icomoon.woff?cuglms') format('woff'),
+      url('media/fonts/icomoon.svg?cuglms#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: never; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  
+
+  
+.social-bar {
+    position: absolute;
+    right: 0;
+    /* margin-right: 16px; */
+    top: 25%;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon-facebook {
+    background: #2E406E;
+    border-radius: 1rem 0 0 0;
+}
+
+.icon-twitter {
+    background: #339DC5;
+}
+
+.icon-whatsapp {
+    background: #25D366;
+}
+
+.icon-instagram {
+    background: #C13584;
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    color: white;
+}
+
+
+/*==========================================*/
+/*FOOTER*/
+
+footer{
+    background-color: #212529;
+    color: white;
+    margin-top: 20px;
+    min-height: 200px;
+}
+
+.container-footer {
+    min-height: 200px;
+    background-color: #212529;
+    border-color: #212529;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-footer .redes-footer,  
+.container-footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.container-footer .redes-footer li,
+.container-footer .menu li {
+    list-style: none;
+}
+
+.container-footer .redes-footer li a {
+    font-size: 1.25rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.container-footer .menu li a {
+    font-size: 0.938rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.container-footer .menu li a:hover {
+    opacity: 1;
+}
+
+.container-footer .redes-footer li a:hover {
+    transform: translateY(-10px);
+}
+
+.container-footer p {
+   color: #fff;
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-size: 0.75rem; 
+}
+
+.footer-icon {
+    text-decoration: none;
+}
+
+.footer-icon .icon-facebook {
+    background: #212529;
+    border-radius: 0 0 0 0;
+}
+
+.footer-icon .icon-twitter {
+    background: #212529;
+    border-radius: 0 0 0 0;
+}
+
+.footer-icon .icon-whatsapp {
+    background: #212529;
+    border-radius: 0 0 0 0;
+}
+
+.footer-icon .icon-instagram {
+    background: #212529;
+    border-radius: 0 0 0 0;
+}
+
+/*==============================*/
+/*educacion*/
+
+.items-list {
+    list-style: none;
+    padding: 0;
+}
+
+.items-list li{
+    padding: 12px 0;
+}
+
+.educacion-lista {
+    padding-top: 12px;
+}
+
+.educacion-logo {
+    max-height: 50px;
+    margin: auto;
+    display: block;
+    padding-left: 12px;
+}
+
+.educacion-logo a {
+    text-decoration: none;
+}
+
+.educacion-info {
+    padding-left: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1.5px solid rgb(176, 168, 185, .2);
+}
+
+.educacion-info a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+time {
+    font-size: .75rem;
+    opacity: .75;
+}
+
+
